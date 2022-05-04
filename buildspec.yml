@@ -3,11 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 3.9
     commands:
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
+      - pip install zappa
 
   pre_build:
     commands:
